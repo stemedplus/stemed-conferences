@@ -22,9 +22,9 @@ the [STEMEd+ Digest](https://stemedplus.github.io/STEMEd-Digest/), [STEMEd+ Prof
   and how often each meeting runs. Meetings whose next dates are not announced stay listed under
   "Recurring meetings" so you know what is coming.
 - **Disciplines** come from the list shared across STEMEd+ Commons, kept in
-  the [HuMeta profile](https://github.com/stemedplus/humeta-profile) (`stemedplus_disciplines.json`). Each build
+  [stemedplus-theme](https://github.com/stemedplus/stemedplus-theme) (`stemedplus_disciplines.json`). Each build
   refreshes the copy in `stemed_conferences/stemedplus_disciplines.json`, and keeps the stored copy if the
-  download fails or HuMeta's version is older.
+  download fails or the theme's version is older.
 
 Dates come from each sponsor's own pages. A meeting marked **Confirm dates** was announced by the sponsor
 or a partner society, but its own page does not show the dates yet. Always confirm before you submit or travel.
@@ -58,7 +58,7 @@ checked against `schema/conference.schema.json`.
 
 A GitHub Actions workflow (`.github/workflows/update.yml`) runs every day and on every push:
 
-1. refreshes the shared discipline list from HuMeta;
+1. refreshes the shared discipline list from stemedplus-theme;
 2. runs the tests and checks every file in `conferences/`;
 3. builds the site into `output/` and publishes it to GitHub Pages. Meetings that have ended drop off,
    deadlines that have passed are marked, and the date each meeting was first listed is carried over from

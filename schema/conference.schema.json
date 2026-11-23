@@ -23,7 +23,7 @@
     },
     "disciplines": {
       "type": "array", "uniqueItems": true, "items": {"type": "string"},
-      "description": "Labels from the STEMEd+ discipline list (stemed_conferences/stemedplus_disciplines.json, kept in HuMeta). Leave empty for meetings that cover all STEM+ fields."
+      "description": "Labels from the STEMEd+ discipline list (stemed_conferences/stemedplus_disciplines.json, kept in stemedplus-theme). Leave empty for meetings that cover all STEM+ fields."
     },
     "url": {"type": "string", "format": "uri", "pattern": "^https?://", "description": "The sponsor's page for the series."},
     "frequency": {"enum": ["annual", "twice a year", "biennial", "quadrennial", "irregular"]},
